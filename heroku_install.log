@@ -70,3 +70,14 @@ Bash completion has been installed to:
 zsh completions have been installed to:
   /usr/local/share/zsh/site-functions
 
+
+
+Commands to run:
+
+To add the public key:
+$ heroku keys:add ~/.ssh/id_rsa.pub
+
+
+
+$ sudo mkdir /usr/local/Frameworks
+$ sudo chown $(whoami):admin /usr/local/Frameworks
