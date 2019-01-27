@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import tweepy
+import argparse
 
 consumer_key = "Enio78hmpmgx3JhSggCCb8w8w"
 consumer_secret = "ihZmcVPOvjxEsWrL3Zhnl6P0R61TpBNsKkp6tr9rnU4rNKaNUZ"
@@ -145,9 +146,18 @@ class TweetInterface:
 def main():
     tweetInterface = TweetInterface(consumer_key=consumer_key, consumer_secret=consumer_secret,
                             access_token=access_token, access_token_secret=access_token_secret)
-    # tweetInterface.getHomeTimeline(count=5)
-    # tweetInterface.getUserTimeline(user_id="SenKamalaHarris")
-    tweetInterface.search("#google")
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--hashtag", help="take hashtag to get tweets posted with this hashtag", default=None)
+    parser.add_argument("--user_id", help="user id for which to get tweets", default=None)
+    parser.add_argument("--id", help="id for which to get tweets", default=None)
+    parser.add_argument("--screen_name", help="screen name for which to get tweets", default=None)
+    parser.add_argument("--count", help="number of tweets to get", default=None)
+    
+    args = parser.parse_args()
+
+    if args.hashtag is not None:
+        tweetInterface.search(args.hashtag)
 
 if __name__ == '__main__':
     main()

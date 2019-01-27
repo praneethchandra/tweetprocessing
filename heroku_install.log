@@ -1,0 +1,72 @@
+Guests-MacBook-Pro:tweetproc guestaccount$ brew install heroku/brew/heroku
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> Updated Formulae
+akamai            asdf              caddy             ctop              embulk            gdal              git-flow-avh      godep             iso-codes         libxml2           node              parallel          ponyc             wtf               zsh
+ammonite-repl     blueutil          cargo-completion  diff-so-fancy     epubcheck         geant4            git-quick-stats   gssdp             jhipster          lsd               nwchem            phpmyadmin        shfmt             ykman
+angular-cli       bower             closure-compiler  doctl             gauge             ghostscript       go                hub               libbi             minimal-racket    p11-kit           pipenv            spice-protocol    youtube-dl
+==> Deleted Formulae
+ruby@1.8
+
+==> Tapping heroku/brew
+Cloning into '/usr/local/Homebrew/Library/Taps/heroku/homebrew-brew'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 10 (delta 0), reused 7 (delta 0), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+Tapped 2 formulae (38 files, 28.7KB).
+==> Installing heroku from heroku/brew
+==> Installing dependencies for heroku/brew/heroku: heroku/brew/heroku-node
+==> Installing heroku/brew/heroku dependency: heroku/brew/heroku-node
+==> Downloading https://cli-assets.heroku.com/homebrew/node-11.3.0.tar.xz
+######################################################################## 100.0%
+🍺  /usr/local/Cellar/heroku-node/11.3.0: 3 files, 38.9MB, built in 3 seconds
+==> Installing heroku/brew/heroku
+==> Downloading https://cli-assets.heroku.com/heroku-v7.19.4/heroku-v7.19.4.tar.xz
+######################################################################## 100.0%
+==> Caveats
+To use the Heroku CLI's autocomplete --
+  Via homebrew's shell completion:
+    1) Follow homebrew's install instructions https://docs.brew.sh/Shell-Completion
+        NOTE: For zsh, as the instructions mention, be sure compinit is autoloaded
+              and called, either explicitly or via a framework like oh-my-zsh.
+    2) Then run
+      $ heroku autocomplete --refresh-cache
+
+  OR
+
+  Use our standalone setup:
+    1) Run and follow the install steps:
+      $ heroku autocomplete
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions have been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/heroku/7.19.4: 17,586 files, 44.8MB, built in 18 seconds
+==> Caveats
+==> heroku
+To use the Heroku CLI's autocomplete --
+  Via homebrew's shell completion:
+    1) Follow homebrew's install instructions https://docs.brew.sh/Shell-Completion
+        NOTE: For zsh, as the instructions mention, be sure compinit is autoloaded
+              and called, either explicitly or via a framework like oh-my-zsh.
+    2) Then run
+      $ heroku autocomplete --refresh-cache
+
+  OR
+
+  Use our standalone setup:
+    1) Run and follow the install steps:
+      $ heroku autocomplete
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions have been installed to:
+  /usr/local/share/zsh/site-functions
+
